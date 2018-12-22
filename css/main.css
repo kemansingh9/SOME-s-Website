@@ -1,0 +1,467 @@
+/*-------------------------------------------------*/
+               /*----GLOBAL-----*/
+/*-------------------------------------------------*/
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+	font-family: 'Karla', Arial, Helvetica;
+	overflow-x: hidden;
+	font-size: 16px;
+	padding-top: 88px;
+}
+
+h1{
+	font-size: 200%;
+}
+
+h2{
+	font-size: 150%;
+}
+
+h4{
+	font-size: 125%;
+}
+
+li{
+	list-style: none;
+}
+
+a{
+	text-decoration: none !important;
+	color:#000;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+    background: #fff;
+}
+
+.section-title{
+	color: #666 !important;
+	padding-bottom: 2em;
+}
+
+/*---------------------------*/
+/*---------NAVIGATION--------*/
+/*---------------------------*/
+
+.navbar-brand{
+	font-size: 250%;
+	color:  #b30000;
+	padding-right: 0.5em;
+	padding-left: 2em;
+}
+
+.nav-item {
+	font-size: 1.25rem;
+	/* word-spacing: 0.2em; */
+	margin-left: 1.5em;
+}
+
+.brand-name{
+	font-family: 'Righteous';
+	color:  #b30000;
+}
+
+.org-name{
+	font-family: 'Charm';
+	color: #00b8e6;
+}
+
+.nav-item{
+	border-bottom: 2px solid transparent;
+	transition: all 0.3s ease-in-out;
+}
+
+.nav-item:hover, .nav-item:active{
+	border-bottom: 2px solid #b30000;
+}
+
+
+/*---------------------------*/
+/*------SITE INFORMATION-----*/
+/*---------------------------*/
+
+.site-info{
+    width: 90%;
+    max-width: 1170px;
+    margin: 0 auto;
+		padding-bottom: 2rem;
+	}
+
+.logo{
+	font-size: 700%;
+  transform: translate(-30%, 12%);
+	color: #960000;
+}
+
+.title{
+	font-family: 'Righteous' !important;
+}
+
+.site-description{
+	font-family: 'Charm';
+}
+
+.social-links li{
+	display: inline-block;
+	padding-right: 0.5em;
+	font-size: 150%;
+}
+
+ul.member-social{
+	padding: 0;
+	text-align: center;
+}
+.member-social li{
+	display: inline-block;
+	padding: 0 0.5em;
+	font-size: 150%;
+}
+
+/*---------------------------*/
+/*----------CAROUSEL---------*/
+/*---------------------------*/
+
+.carousel-item{
+	position: relative;
+}
+
+.carousel-item img{
+	width: 100%;
+	height: 80%;;
+}
+
+.carousel-item-title{
+	position: absolute;
+	color: #fff;
+	padding: 0.4em;
+	font-family: 'Karla';
+	font-size: 200%;
+	font-weight: 700;
+	background-color: rgba(0, 0, 0, 0.5);
+	transform: translate(-50%, -50%);
+	top: 80%;;
+	left:50%;
+	transition: all 0.3s ease-in-out;
+}
+
+.carousel-item-title:hover, .carousel-item-title:active{
+	color: #960000;
+	background-color: rgba(100,100,100,0.5);
+}
+
+/*-----Changing the caraousel animation from slide to fade-----*/
+.carousel.fade {
+  opacity: 1;
+}
+.carousel.fade .carousel-item {
+  -moz-transition: opacity ease-in-out .7s;
+  -o-transition: opacity ease-in-out .7s;
+  -webkit-transition: opacity ease-in-out .7s;
+  transition: opacity ease-in-out .7s;
+  left: 0 !important;
+  opacity: 0;
+  top:0;
+  position:absolute;
+  width: 100%;
+  display:block !important;
+  z-index:1;
+}
+.carousel.fade .carousel-item:first-child {
+  top:auto;
+  position:relative;
+}
+
+.carousel.fade .carousel-item.active {
+  opacity: 1;
+  -moz-transition: opacity ease-in-out .7s;
+  -o-transition: opacity ease-in-out .7s;
+  -webkit-transition: opacity ease-in-out .7s;
+  transition: opacity ease-in-out .7s;
+  z-index:2;
+}
+
+/*----Make Arrows appear on Top ---**/
+.carousel-control-prev, .carousel-control-next{
+	z-index: 1000;
+}
+
+/*---------------------------*/
+/*-----ABOUT-US-SECTION-----*/
+/*---------------------------*/
+
+.about-us{
+	margin: 4em auto;
+}
+
+.team-img{
+	width: 100%;
+	padding-left: 3em;
+}
+
+.about-text{
+	margin-right: 4em;
+	text-align: justify;
+}
+
+.view-more{
+	transition: all 0.3s ease-in-out;
+	font-size: 120%;
+}
+.view-more:hover{
+	color: #960000;
+	padding-left: 0.5em;
+}
+
+.fas.fa-angle-double-right{
+	padding-left: 9px;
+	font-size: 120%;
+	transform: translateY(10%);
+}
+
+/*-----------------------------*/
+/*--POPULAR SOCIETIES SECTION--*/
+/*-----------------------------*/
+
+/*ALIGN TITLE WITHIN HR---*/
+.hr-sect {
+	display: flex;
+	flex-basis: 100%;
+	align-items: center;
+	color: rgba(0, 0, 0, 0.35);
+	margin: 8px 0px;
+}
+.hr-sect::before,
+.hr-sect::after {
+	content: "";
+	flex-grow: 1;
+	background: rgba(100, 100, 100, 0.35);
+	height: 1px;
+	font-size: 0px;
+	line-height: 0px;
+	margin: 0px 8px;
+}
+
+.societies{
+	margin: 2em auto;
+}
+.heading-text{
+	text-align: center;
+}
+
+.society-img{
+	padding-left: 5em;
+	height: 200px;
+	margin-bottom: 5em;
+}
+.society-img img{
+	height: 100%;
+	transition: all 0.3s ease-in-out;
+}
+
+.society-img img:hover{
+	transform: scale(1.1);
+}
+
+/*---------------------------*/
+/*--LATEST ARTICLES SECTION--*/
+/*---------------------------*/
+
+.blog-cards{
+	max-width: 1180px;
+	margin: auto;
+}
+
+.blog-cards .card{
+	margin-bottom: 2em;
+}
+
+.card-img-top{
+	opacity: 0.9;
+	transition: all 0.3s ease-in-out;
+}
+
+.card-img-top:hover{
+	opacity: 1;
+}
+/*---------------------------*/
+/*--------FOOTER-------------*/
+/*---------------------------*/
+
+footer{
+	margin-top: 7em;
+	background-color: #960000;
+	padding: 1em;
+	color: #ddd;
+}
+
+footer p{
+	text-align: center;
+	margin: 0;
+	padding-right: 2em;
+}
+
+.footer-link{
+	text-align: center;
+}
+
+footer .footer-link a{
+	color: #fff;
+	transition: all 0.3s ease-in-out;
+}
+
+footer .footer-link a:hover{
+	font-size: 110%;
+}
+
+/*---------------*/
+/*---ARTICLE-----*/
+/*---------------*/
+
+.article{
+	width: 70%;
+	margin: 0 auto;
+}
+
+.article p{
+	margin-bottom: 1.5em;
+	font-size: 18px;
+	color: #748494;
+	line-height: 1.8;
+}
+/*------------------------*/
+/*------FEATURED COVERS-----*/
+/*------------------------*/
+/* Note: The below cover classes violate DRY rule, using JS can rectify the repeated code problems*/
+
+.cover{
+	position: relative;
+	color: #fff;
+	font-size: 120%;
+	padding: 10em;
+	text-transform: capitalize;
+}
+
+.team-cover{
+	background: linear-gradient(to bottom right, rgba(3, 92, 154, 0.9) 0%, rgba(3, 92, 154, 0.9) 59%, rgba(28, 222, 256, 0.9) 100%), url('../images/team.jpg') no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.about-cover{
+	background: linear-gradient(to bottom right, rgba(3, 92, 154, 0.8) 0%, rgba(3, 92, 154, 0.8) 59%, rgba(28, 222, 256, 0.8) 100%), url('../images/about.jpg') no-repeat;
+	background-size: cover;
+}
+
+.main-cover{
+	background: linear-gradient(to bottom right, rgba(3, 92, 154, 0.7) 0%, rgba(3, 92, 154, 0.7) 59%, rgba(28, 222, 256, 0.7) 100%), url('../images/idea2.jpg') no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.gallery-cover{
+	background: linear-gradient(to bottom right, rgba(3, 92, 154, 0.9) 0%, rgba(3, 92, 154, 0.9) 59%, rgba(28, 222, 256, 0.9) 100%), url('../images/gallery.jpg') no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.post-title{
+	transform: translate(-50%, -50%);
+	top:50%;
+	left: 50%;
+	position: absolute;
+	text-align: center;
+}
+
+.author {
+	width: 40px;
+	height: auto;
+}
+
+/*----GALLERY------*/
+
+.gallery img{
+	width: 100%;
+	height: auto;
+	opacity: 0.9;
+	transition: all 0.3s ease-in-out;
+}
+
+.gallery img:hover{
+	opacity: 1;
+}
+
+/*-------TEAM MEMBERS CARDS-------*/
+.card-hover {transition: all 0.3s ease;}
+.card-hover:hover, .gallery img:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15);
+    transform: translateY(-3px);
+}
+
+/*---------------------------*/
+/*--------MEDIA QUERIES------*/
+/*---------------------------*/
+
+@media only screen and (max-width: 1180px) {
+	.society-img{
+		height: 150px;
+	}
+
+@media only screen and (max-width: 1080px) {
+	body{
+		font-size: 14px;
+	}
+	.nav-link{
+		font-size: 1rem;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+
+	.site-info{
+		text-align: center;
+	}
+
+  .carousel-item img{
+		height: 60vh;
+	}
+
+	.carousel-item-title{
+		top:70%;
+	}
+	.team-img{
+		margin: 0;
+		padding: 0;
+	}
+
+	.about-text{
+		padding: 5px;
+	}
+
+	.societies{
+		padding: 0;
+		margin: 0;
+	}
+	.society-img{
+		text-align: center;
+		height: 250px;
+	}
+}
+
+@media only screen and (max-width: 512px) {
+	.carousel-item img{
+		height: 50vh;
+	}
+	.carousel-item-title{
+		font-size: 150%;
+
+}
